@@ -55,6 +55,7 @@ resource "aws_iam_role_policy" "allow_s3_all" {
 
 resource "aws_s3_bucket" "web_bucket" {
   bucket        = var.bucket_name
+  acl = "private"
   force_destroy = true
 }
 
