@@ -5,18 +5,21 @@ name           = "Abhishek"
 value          = "terraform test"
 
 vpc_cidr_block = {
+  default = "10.3.0.0/16"
   devlopment = "10.0.0.0/16"
   UAT        = "10.1.0.0/16"
   production = "10.2.0.0/16"
 }
 
 instance_count = {
+  default = 2
   devlopment = 2
   UAT        = 2
   production = 3
 }
 
-vpc_subnet_count = {
+vpc_subnet_count = {\
+  default = 2
   devlopment = 2
   UAT        = 2
   production = 3
