@@ -18,7 +18,7 @@ instance_count = {
   production = 3
 }
 
-vpc_subnet_count = {\
+vpc_subnet_count = {
   default = 2
   devlopment = 2
   UAT        = 2
